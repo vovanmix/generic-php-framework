@@ -1,0 +1,22 @@
+<database name="main" namespace="DatabaseMeta">
+    <table name="copy">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="slug" type="varchar" size="255" required="true" />
+        <column name="page" type="varchar" size="255" required="true" />
+        <column name="type" type="varchar" size="255" required="true" />
+        <column name="value" type="CLOB" required="false" />
+        <column name="lang" type="char" size="10" required="true" />
+
+        <behavior name="timestampable" />
+
+        <index>
+            <index-column name="slug" />
+        </index>
+        <index>
+            <index-column name="page" />
+        </index>
+        <index>
+            <index-column name="lang" />
+        </index>
+    </table>
+</database>

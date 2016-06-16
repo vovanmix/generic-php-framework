@@ -1,0 +1,11 @@
+<database name="main" namespace="DatabaseMeta">
+    <table name="user">
+        <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true"/>
+        <column name="name" type="varchar" size="255" required="true" />
+        <column name="password" type="varchar" size="255" required="true" />
+
+        <index>
+            <index-column name="name" />
+        </index>
+    </table>
+</database>

@@ -1,0 +1,7 @@
+vendor
+composer.lock
+tmp/*.*
+tmp/**/*.*
+!tmp/**/.gitkeep
+.env
+.idea
